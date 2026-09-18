@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Checkout - Thala 7 Sneaker Store." />
+    <title>Checkout - Thala 7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="checkout-page">
+      <header class="header">
+        <a href="index.html" class="logo">
+          <span>Thala</span>
+          <strong>7.</strong>
+        </a>
+
+        <nav class="navbar">
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span>Brands</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li><a href="product.html">Nike</a></li>
+                <li><a href="product.html">Adidas</a></li>
+                <li><a href="product.html">Puma</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span>More</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="cart.html">Explore</a></li>
+              </ul>
+            </div>
+
+            <a href="#" class="nav-link">Contact</a>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <div class="search-box">
+            <span class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <a
+            href="cart.html"
+            class="icon-button cart-button"
+            aria-label="Shopping cart"
+          >
+            <span class="cart-icon">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </span>
+            <span class="cart-count">3</span>
+          </a>
+
+          <button type="button" class="profile-button" aria-label="Profile">
+            <img src="images/profile-pic.jpg" alt="Profile" />
+          </button>
+        </div>
+      </header>
+
+      <section class="checkout-section">
+        <!-- Left container -->
+        <div class="checkout-left">
+          <p class="checkout-subheading">Checkout</p>
+
+          <h2 class="section-heading">Contact Details</h2>
+          <div class="form-group">
+            <label for="emailId" class="form-label">Email ID</label>
+            <input
+              type="email"
+              id="emailId"
+              class="form-input"
+              placeholder="John Doe"
+            />
+          </div>
+
+          <h2 class="section-heading">Payment</h2>
+
+          <div class="payment-card">
+            <input
+              type="radio"
+              name="payment-method"
+              id="tab-card"
+              class="tab-radio"
+              checked
+            />
+            <label for="tab-card" class="payment-tab">
+              <i class="fa-regular fa-credit-card"></i>
+              Card
+            </label>
+
+            <input
+              type="radio"
+              name="payment-method"
+              id="tab-crypto"
+              class="tab-radio"
+            />
+            <label for="tab-crypto" class="payment-tab">
+              <i class="fa-solid fa-bitcoin-sign"></i>
+              Crypto
+            </label>
+
+            <input
+              type="radio"
+              name="payment-method"
+              id="tab-bank"
+              class="tab-radio"
+            />
+            <label for="tab-bank" class="payment-tab">
+              <i class="fa-solid fa-building-columns"></i>
+              Bank
+            </label>
+
+            <span class="payment-tab payment-tab-more" aria-hidden="true">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </span>
+
+            <!-- Card form -->
+            <div class="payment-form" id="form-card">
+              <div class="form-group">
+                <label for="cardNumber" class="form-label">Card Number</label>
+                <input
+                  type="text"
+                  id="cardNumber"
+                  class="form-input"
+                  placeholder="John Doe"
+                  inputmode="numeric"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="expiry" class="form-label">Expiry</label>
+                  <input
+                    type="text"
+                    id="expiry"
+                    class="form-input"
+                    placeholder="MM/YY"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="cvc" class="form-label">CVC</label>
+                  <input
+                    type="text"
+                    id="cvc"
+                    class="form-input"
+                    placeholder="***"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="country" class="form-label">Country</label>
+                  <select id="country" class="form-input">
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Australia</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="zip" class="form-label">ZIP</label>
+                  <input
+                    type="text"
+                    id="zip"
+                    class="form-input"
+                    placeholder="XXXXX"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Crypto form -->
+            <div class="payment-form" id="form-crypto">
+              <div class="form-group">
+                <label for="walletAddress" class="form-label"
+                  >Wallet Address</label
+                >
+                <input
+                  type="text"
+                  id="walletAddress"
+                  class="form-input"
+                  placeholder="0x0000...0000"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cryptoCoin" class="form-label">Coin</label>
+                <select id="cryptoCoin" class="form-input">
+                  <option>Bitcoin (BTC)</option>
+                  <option>Ethereum (ETH)</option>
+                  <option>USDT</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Bank form -->
+            <div class="payment-form" id="form-bank">
+              <div class="form-group">
+                <label for="accountNumber" class="form-label"
+                  >Account Number</label
+                >
+                <input
+                  type="text"
+                  id="accountNumber"
+                  class="form-input"
+                  placeholder="0000 0000 0000"
+                  inputmode="numeric"
+                />
+              </div>
+              <div class="form-group">
+                <label for="ifsc" class="form-label">IFSC Code</label>
+                <input
+                  type="text"
+                  id="ifsc"
+                  class="form-input"
+                  placeholder="ABCD0123456"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right container -->
+        <div class="checkout-right">
+          <h1 class="order-summary-heading">Order Summary</h1>
+
+          <div class="coupon-card">
+            <label class="coupon-label" for="couponInput"
+              >Enter Coupon Code</label
+            >
+            <div class="coupon-row">
+              <input
+                type="text"
+                id="couponInput"
+                class="coupon-input"
+                placeholder="COUPON CODE"
+              />
+              <button type="button" class="apply-coupon-button">
+                Apply Coupon
+              </button>
+            </div>
+
+            <div class="summary-row">
+              <span>Sub Total</span>
+              <span>&#8377;4,700</span>
+            </div>
+            <div class="summary-row">
+              <span>Taxes (if applicable)</span>
+              <span>&#8377;199</span>
+            </div>
+            <div class="summary-row">
+              <span>Discount</span>
+              <span>&#8377;0</span>
+            </div>
+            <div class="summary-row summary-total">
+              <span>Total</span>
+              <span>&#8377;4,999</span>
+            </div>
+          </div>
+
+          <a href="index.html" class="pay-now-button"> Pay Now &#8377;4,999 </a>
+
+          <div class="payment-badges">
+            <span class="payment-badge"
+              ><i class="fa-solid fa-shield-halved"></i> Secure</span
+            >
+            <span class="payment-badge payment-badge-brand"
+              ><i class="fa-solid fa-bolt"></i> Razorpay</span
+            >
+            <span class="payment-badge"
+              ><i class="fa-solid fa-lock"></i> Secure</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

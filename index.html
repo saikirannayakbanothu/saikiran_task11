@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thala 7 Sneaker Store - Premium sneakers for every occasion."
+    />
+    <title>Thala 7 - Sneaker Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="store-container">
+      <div class="landing-top">
+        <!-- Header -->
+        <header class="header">
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <span>Thala</span>
+            <strong>7.</strong>
+          </a>
+
+          <!-- Navigation -->
+          <nav class="navbar">
+            <div class="nav-links">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="#" class="nav-link">About</a>
+
+              <div class="dropdown">
+                <button
+                  class="dropdown-toggle"
+                  tabindex="0"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span>Brands</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="product.html">Nike</a></li>
+                  <li><a href="product.html">Adidas</a></li>
+                  <li><a href="product.html">Puma</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="dropdown-toggle"
+                  tabindex="0"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span>More</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="product.html">Shop</a></li>
+                  <li><a href="cart.html">Explore</a></li>
+                </ul>
+              </div>
+
+              <a href="#" class="nav-link">Contact</a>
+            </div>
+          </nav>
+
+          <!-- Header Actions -->
+          <div class="header-actions">
+            <!-- Search -->
+            <div class="search-box">
+              <span class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input type="text" placeholder="Search..." />
+            </div>
+
+            <!-- Cart -->
+            <button
+              type="button"
+              class="icon-button cart-button"
+              aria-label="Shopping cart"
+            >
+              <a href="cart.html">
+                <span class="cart-icon">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </span>
+              </a>
+              <span class="cart-count">0</span>
+            </button>
+
+            <!-- Profile -->
+            <button type="button" class="profile-button" aria-label="Profile">
+              <img src="images/profile-pic.jpg" alt="Profile" />
+            </button>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-left">
+            <div class="hero-content">
+              <div class="seven-brand">
+                <img src="images/seven-logo.png" alt="seven-logo" />
+              </div>
+
+              <h1>
+                7!! Thala For<br />
+                a <span>Reason!</span>
+              </h1>
+
+              <p class="hero-description">
+                Lorem ipsum dolor sit amet consectetur.<br />
+                Pretium quisque lorem feugiat justo at ut orci nisi.
+              </p>
+
+              <a href="product.html" class="shop-button">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-background"></div>
+            <img src="images/hero-shoe.png" class="hero-shoe" alt="Sneaker" />
+          </div>
+
+          <div class="floating-badge">
+            <span>A</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- Service Overview -->
+      <section class="service-overview">
+        <!-- Reviews -->
+        <div class="service-item">
+          <div class="service-icon">
+            <img src="images/reviews.png" alt="customer-reviews" />
+          </div>
+          <div class="service-text">
+            <strong>2K+</strong>
+            <span>Reviews</span>
+          </div>
+        </div>
+
+        <!-- Customers -->
+        <div class="service-item">
+          <div class="service-icon">
+            <img src="images/customers.png" alt="customers" />
+          </div>
+          <div class="service-text">
+            <strong>30K+</strong>
+            <span>Customers</span>
+          </div>
+        </div>
+
+        <!-- High Quality -->
+        <div class="service-item">
+          <div class="service-icon">
+            <img src="images/high-quality.png" alt="quality" />
+          </div>
+          <div class="service-text">
+            <strong>High</strong>
+            <span>Quality</span>
+          </div>
+        </div>
+
+        <!-- Rating -->
+        <div class="service-item">
+          <div class="service-icon">
+            <img src="images/ratings.png" alt="ratings" />
+          </div>
+          <div class="service-text">
+            <strong>4.5/5</strong>
+            <span>Rating</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
